@@ -7,20 +7,21 @@
   <link rel="stylesheet" href="HQ.css">
 </head>
 
-<body>
+<body id="fullPage">
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news" onclick="addPenis()">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a href="#home">Home</a>
+    <a href="#Tasks" class="active">Tasks</a>
   </div>
-  <div id="textInputLine" style="height: 60px;">
-    <textarea id="textInput" placeholder="text..."></textarea>
-    <button type="button" id="submitButton" onclick="addTask()">Add Task</button>
+  <div id="textInputLine">
+    <textarea id="textInput" placeholder="Name of Your Task..."></textarea>
+    <button type="button" id="addTaskButton" onclick="addTask()">Add Task</button>
   </div>
   <div id="tasks">
+    <h1 id="taskHeading">Tasks:</h1>
   </div>
-  <h1>Hello World</h1>
+
+  <button type="button" id="removeTaskButton" onclick="removeTask()">Remove Task</button>
+
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js"></script>
