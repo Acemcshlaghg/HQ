@@ -60,7 +60,9 @@ button {
   font-family: bookman;
 }
 
-#addTaskButton {}
+#addTaskButton {
+  border-radius: 10px;
+}
 
 #taskHeading {
   color: purple;
@@ -70,10 +72,10 @@ button {
   margin-top: 10px;
   display: grid;
   width: 20%;
-  column-count: 1;
+  column-count: 2;
   color: white;
   text-align: center;
-  border-right: solid white 2px;
+  border: solid white 2px;
 }
 
 #tasks a {
@@ -90,8 +92,13 @@ button {
   color: white;
 }
 
-#removeTaskButton {
-  margin-top: 20px;
+.taskRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.removeTaskButton {
+  margin-left: 100px;
 }
 
 button:hover {

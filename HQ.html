@@ -8,21 +8,32 @@
 </head>
 
 <body id="fullPage">
+  <!-- Navigation Bar -->
   <div class="topnav">
-    <a href="#home">Home</a>
-    <a href="#Tasks" class="active">Tasks</a>
+    <a href="#Home">Home</a>
+    <a href="#Tasks" class="active">Tasks </a>
+    <a href="Money.html">Money </a>
   </div>
+
+
   <div id="textInputLine">
-    <textarea id="textInput" placeholder="Name of Your Task..."></textarea>
+    <textarea id="textInput" placeholder="Name of task..."></textarea>
     <button type="button" id="addTaskButton" onclick="addTask()">Add Task</button>
   </div>
   <div id="tasks">
     <h1 id="taskHeading">Tasks:</h1>
   </div>
 
-  <button type="button" id="removeTaskButton" onclick="removeTask()">Remove Task</button>
-
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <ul>
+    <li>
+      <a href="#">anchor</a>
+      <p style="color: white;">next</p>
+    </li>
+    <li>
+      <a href="#">anchor</a>
+      <p style="color: white;">next2</p>
+    </li>
+  </ul> <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.5.2/firebase-auth.js"></script>
@@ -40,7 +51,7 @@
       measurementId: "G-ZZ6NGZVE4T"
     };
   </script>
-
+  <script src="sketch.js"></script>
   <script src="HQ.js"></script>
 </body>
 
